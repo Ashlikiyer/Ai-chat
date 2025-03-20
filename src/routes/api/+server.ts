@@ -9,64 +9,51 @@ export const POST: RequestHandler = async ({ request }) => {
 
     const user = {
         usertype: "Master User",
-        school_id: "202211535",
-        fullname: "Janzen T. Egnisaban",
-        firstname: "Janzen",
-        surname: "Egnisaban",
-        middlename: "Tulipan",
-        email: "202211535@gordoncollege.edu.ph",
-        phone: "09683506258",
-        birthday: "2003-11-02",
+        school_id: "202210473",
+        fullname: "Ashley Kier Ferreol",
+        firstname: "Ashley Kier",
+        surname: "Ferreol",
+        middlename: "Grey",
+        email: "202210473@gordoncollege.edu.ph",
+        phone: "09995225714",
+        birthday: "2004-03-05",
         age: 21,
         gender: "Male",
         nationality: "Filipino",
         address: {
-            house_number: "#92",
-            street: "Mabini St.",
-            city: "Olongapo City",
-            state: "Zambales",
-            zip_code: "2200"
+            city: "Bataan",
+            zip_code: "2110"
         },
-        hobbies: ["running", "playing mobile legends"],
+        hobbies: ["running", "reading books", "gym", "watching movies"],
         academic_info: {
             course: "BSCS - Computer Science",
             year_level: "3rd Year",
             school: "Gordon College"
         },
         skills: {
-            technical: ["AI Integration", "Programming", "Data Analysis"],
+            technical: ["UI/UX Design", "Programming", "Data Analysis"],
             soft_skills: ["Problem-Solving", "Teamwork", "Critical Thinking"]
         },
-        things_i_like: ["chocolate", "chicken", "beef", "empanada", "beautiful things"],
+        things_i_like: ["chocolate", "chicken", "beef", "bread", "seafoods"],
         favorite_movies: ["Avengers"],
-        favorite_games: ["Mobile Legends", "League of Legends"],
+        favorite_games: ["Call of Duty", "Wild Rift"],
         social_media: {
-            facebook: "https://www.facebook.com/aze.egnisaban",
-            instagram: "https://www.instagram.com/azzzjnzn/"
-        },
-        emergency_contact: {
-            name: "Eden Egnisaban",
-            relationship: "Mother",
-            phone: "09187575745"
+            facebook: "https://www.facebook.com/ashleykier.ferreol.23/",
+
         },
         mother: {
-            name: "Eden Egnisaban",
+            name: "Myleen Grey",
             relationship: "Mother",
-            phone: "09187575745"
         },
         father: {
-            name: "Dino Egnisaban",
+            name: "Patrick Ferreol",
             relationship: "Father",
-            about: "deceased"
         },
         brother: {
-            name: "Jonas Egnisaban",
+            name: "Wesley Kyle Ferreol",
             relationship: "Brother",
-            phone: "0945 332 8123"
         },
-        blood_type: "O+",
-        medical_conditions: "None",
-        status: "In a relationship with Joshmine"
+    
     };
 
     const chat = await ollama.chat({
