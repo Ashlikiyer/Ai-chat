@@ -20,10 +20,7 @@ export const POST: RequestHandler = async ({ request }) => {
         age: 21,
         gender: "Male",
         nationality: "Filipino",
-        address: {
-            city: "Bataan",
-            zip_code: "2110"
-        },
+       
         hobbies: ["running", "reading books", "gym", "watching movies"],
         academic_info: {
             course: "BSCS - Computer Science",
@@ -37,22 +34,8 @@ export const POST: RequestHandler = async ({ request }) => {
         things_i_like: ["chocolate", "chicken", "beef", "bread", "seafoods"],
         favorite_movies: ["Avengers"],
         favorite_games: ["Call of Duty", "Wild Rift"],
-        social_media: {
-            facebook: "https://www.facebook.com/ashleykier.ferreol.23/",
-
-        },
-        mother: {
-            name: "Myleen Grey",
-            relationship: "Mother",
-        },
-        father: {
-            name: "Patrick Ferreol",
-            relationship: "Father",
-        },
-        brother: {
-            name: "Wesley Kyle Ferreol",
-            relationship: "Brother",
-        },
+        
+       
     
     };
 
